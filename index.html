@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#233d32">
+  <meta name="description" content="Undangan pernikahan Ragil & Dinar.">
+  <title>The Wedding of Ragil & Dinar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <!-- Font Adelia, Amsterdam, Saudagar, dan Signature United dibaca dari assets/fonts/. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="bgMusic" loop preload="none">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="cover" id="cover">
+    <div class="cover__shade"></div>
+    <div class="cover__content">
+      <p class="eyebrow">Bismillahirrahmanirrahim</p>
+      <div class="cover__monogram" aria-hidden="true">R<span>&</span>D</div>
+      <h1 class="cover__names"><span data-config="partnerOne">Ragil</span> <i>&</i> <span data-config="partnerTwo">Dinar</span></h1>
+      <p class="cover__date" data-config="dateLabel">Minggu, 20 Desember 2026</p>
+      <div class="cover__guest">
+        <span>Kepada Yth.</span>
+        <strong id="guestNameCover">Bapak/Ibu/Saudara/i</strong>
+        <span>di tempat</span>
+      </div>
+      <button class="button button--gold" id="openInvitation" type="button">Buka Undangan <span aria-hidden="true">↗</span></button>
+      <p class="cover__hint">Mohon maaf apabila terdapat kesalahan penulisan nama/gelar.</p>
+    </div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <main class="page-shell">
+    <header class="hero section" id="home">
+      <div class="hero__image" role="img" aria-label="Foto pasangan"></div>
+      <div class="hero__panel">
+        <p class="eyebrow">Assalamu’alaikum Warahmatullahi Wabarakatuh</p>
+        <p class="arabic" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+        <p class="eyebrow">Dengan memohon rahmat dan ridha Allah SWT</p>
+        <h2 class="display-names"><span data-config="partnerOne">Ragil</span><span class="ampersand">&</span><span data-config="partnerTwo">Dinar</span></h2>
+        <p class="hero__date" data-config="dateLabel">Minggu, 20 Desember 2026</p>
+        <a class="text-link" href="#couple">Baca Undangan <span aria-hidden="true">↓</span></a>
+      </div>
+    </header>
+
+    <section class="intro section card" id="invitation">
+      <span class="section-kicker">Dengan penuh rasa syukur</span>
+      <h2 class="section-heading">Undangan Pernikahan</h2>
+      <p class="body-copy">Dengan memohon rahmat dan ridha Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada acara pernikahan kami.</p>
+      <p class="arabic arabic--large" lang="ar" dir="rtl">السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ</p>
+    </section>
+
+    <section class="couple section" id="couple">
+      <div class="section-intro">
+        <span class="section-kicker">Dua hati, satu tujuan</span>
+        <h2 class="section-heading">Mempelai</h2>
+      </div>
+      <div class="couple-grid">
+        <article class="person-card card">
+          <div class="portrait portrait--one"><img src="assets/ragil.jpg" alt="Foto Ragil" onerror="this.style.display='none'"></div>
+          <p class="person-card__role">Mempelai Pria</p>
+          <h3 data-config="partnerOneFull">Ragil Adi Nugroho</h3>
+          <p>Putra dari <span data-config="groomParents">Bapak [Nama Ayah] & Ibu [Nama Ibu]</span></p>
+          <a class="text-link" id="groomSocial" href="#" target="_blank" rel="noopener" hidden>Instagram ↗</a>
+        </article>
+        <div class="couple-divider" aria-hidden="true"><span>❦</span></div>
+        <article class="person-card card">
+          <div class="portrait portrait--two"><img src="assets/dinar.jpg" alt="Foto Dinar" onerror="this.style.display='none'"></div>
+          <p class="person-card__role">Mempelai Wanita</p>
+          <h3 data-config="partnerTwoFull">Dinar [Nama Lengkap]</h3>
+          <p>Putri dari <span data-config="brideParents">Bapak [Nama Ayah] & Ibu [Nama Ibu]</span></p>
+          <a class="text-link" id="brideSocial" href="#" target="_blank" rel="noopener" hidden>Instagram ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="countdown-section section card" id="countdown">
+      <span class="section-kicker">Catat tanggalnya</span>
+      <h2 class="section-heading">Menuju Hari Bahagia</h2>
+      <div class="countdown" aria-label="Hitung mundur menuju acara">
+        <div class="countdown__item"><strong id="days">00</strong><span>Hari</span></div>
+        <div class="countdown__item"><strong id="hours">00</strong><span>Jam</span></div>
+        <div class="countdown__item"><strong id="minutes">00</strong><span>Menit</span></div>
+        <div class="countdown__item"><strong id="seconds">00</strong><span>Detik</span></div>
+      </div>
+      <a class="button button--outline" id="calendarLink" target="_blank" rel="noopener">Simpan ke Kalender</a>
+    </section>
+
+    <section class="events section" id="events">
+      <div class="section-intro">
+        <span class="section-kicker">Dengan segala hormat</span>
+        <h2 class="section-heading">Detail Acara</h2>
+      </div>
+      <div class="event-grid" id="eventGrid">
+        <!-- Diisi dari config.js agar detail acara mudah dikustomisasi. -->
+      </div>
+    </section>
+
+    <section class="gift section card" id="gift">
+      <span class="section-kicker">Tanda kasih</span>
+      <h2 class="section-heading">Wedding Gift</h2>
+      <p class="body-copy">Doa restu Anda merupakan hadiah terbaik bagi kami. Bagi yang ingin berbagi tanda kasih, dapat menggunakan informasi berikut.</p>
+      <div class="gift-grid" id="giftGrid"></div>
+      <div class="gift-address" id="giftAddress"></div>
+    </section>
+
+    <section class="rsvp section card" id="rsvp">
+      <span class="section-kicker">Kami menantikan kabar Anda</span>
+      <h2 class="section-heading">RSVP & Ucapan</h2>
+      <p class="body-copy">Mohon konfirmasi kehadiran dan tuliskan doa untuk kami.</p>
+      <form id="rsvpForm">
+        <label for="guestName">Nama lengkap</label>
+        <input id="guestName" name="name" type="text" maxlength="100" autocomplete="name" placeholder="Nama Anda" required>
+        <fieldset class="attendance-fieldset">
+          <legend>Konfirmasi kehadiran</legend>
+          <div class="attendance-options">
+            <label class="attendance-option"><input type="radio" name="attendance" value="Hadir" required><span>✓ Hadir</span></label>
+            <label class="attendance-option"><input type="radio" name="attendance" value="Tidak Hadir"><span>↗ Tidak hadir</span></label>
+            <label class="attendance-option"><input type="radio" name="attendance" value="Ragu"><span>… Masih ragu</span></label>
+          </div>
+        </fieldset>
+        <label for="guestCount">Jumlah tamu yang hadir</label>
+        <select id="guestCount" name="guestCount">
+          <option value="1">1 orang</option><option value="2">2 orang</option><option value="3">3 orang</option><option value="4">4 orang</option>
+        </select>
+        <label for="wishMessage">Ucapan & doa</label>
+        <textarea id="wishMessage" name="message" rows="4" maxlength="1000" placeholder="Tuliskan ucapan dan doa terbaik..." required></textarea>
+        <button class="button button--dark" id="submitRsvp" type="submit">Kirim Konfirmasi</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+      <div class="wishes-header"><h3>Ucapan dari keluarga & sahabat</h3><span id="wishCount"></span></div>
+      <div id="wishList" class="wish-list"><p class="muted">Ucapan akan tampil di sini.</p></div>
+      <div id="wishPagination" class="pagination" hidden>
+        <button type="button" class="button button--outline button--small" id="prevWishes">Sebelumnya</button>
+        <span id="pageInfo"></span>
+        <button type="button" class="button button--outline button--small" id="nextWishes">Berikutnya</button>
+      </div>
+    </section>
+
+    <section class="closing section card">
+      <p class="arabic arabic--large" lang="ar" dir="rtl">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً</p>
+      <p class="body-copy">“Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri agar kamu merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.”</p>
+      <p class="muted">QS. Ar-Rum: 21</p>
+      <div class="closing__flourish">❦</div>
+      <h2 class="display-names display-names--small"><span data-config="partnerOne">Ragil</span> <span class="ampersand">&</span> <span data-config="partnerTwo">Dinar</span></h2>
+      <p class="muted">Merupakan suatu kehormatan bagi kami atas doa dan kehadiran Anda.</p>
+    </section>
+    <footer class="footer">Made with love · <span data-config="partnerOne">Ragil</span> & <span data-config="partnerTwo">Dinar</span></footer>
+  </main>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
