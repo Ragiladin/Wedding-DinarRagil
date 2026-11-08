@@ -1,0 +1,1 @@
+Tempatkan file aset milik sendiri di sini. Foto mempelai: ../ragil.jpg dan ../dinar.jpg (assets/ragil.jpg, assets/dinar.jpg). Musik: assets/music.mp3. Foto galeri: assets/images/moment-1.jpg, moment-2.jpg, moment-3.jpg. Jangan upload aset tanpa izin penggunaan.
