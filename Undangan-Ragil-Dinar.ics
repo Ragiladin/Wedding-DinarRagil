@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ragil Dinar Wedding//ID
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Asia/Jakarta
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+TZNAME:WIB
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:wedding-ragil-dinar-0@invitation
+DTSTAMP:20261109T144113Z
+DTSTART;TZID=Asia/Jakarta:20261210T090000
+DTEND;TZID=Asia/Jakarta:20261210T100000
+SUMMARY:Akad Nikah - Ragil & Dinar
+DESCRIPTION:Undangan pernikahan Ragil & Dinar
+LOCATION:Masjid Al-Barokah\, Gayamsari RT 04/11 Kel. Banyuanyar\, Kec. Banjarsari\, Surakarta\, Jawa Tengah
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:wedding-ragil-dinar-1@invitation
+DTSTAMP:20261109T144113Z
+DTSTART;TZID=Asia/Jakarta:20261210T100000
+DTEND;TZID=Asia/Jakarta:20261210T120000
+SUMMARY:Resepsi - Ragil & Dinar
+DESCRIPTION:Undangan pernikahan Ragil & Dinar
+LOCATION:Kediaman mempelai perempuan\, Gayamsari RT 04/11 Kel. Banyuanyar\, Kec. Banjarsari\, Surakarta\, Jawa Tengah
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
