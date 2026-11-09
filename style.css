@@ -973,7 +973,7 @@ body { background-color: var(--ivory); }
 /* ===== PENGATURAN FONT CERITA KAMI ===== */
 #story .section-heading {
   /* Jenis font */
-  font-family: "Signature Photograph", cursive !important;
+  font-family: "Priestacy", cursive !important;
 
   /* Ukuran font */
   font-size: 45px !important;
@@ -1016,8 +1016,8 @@ body { background-color: var(--ivory); }
 }
 
 @font-face {
-  font-family: "Signature Photograph";
-  src: url("./assets/fonts/SignaturePhotograph.ttf") format("truetype");
+  font-family: "Priestacy";
+  src: url("./assets/fonts/Priestacy.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1025,7 +1025,7 @@ body { background-color: var(--ivory); }
 
 /* Judul Cerita Kami */
 #story .section-heading {
-  font-family: "Signature Photograph", cursive !important;
+  font-family: "Priestacy", cursive !important;
   font-size: 55px;
   color: #2e3921 !important;
   font-weight: normal !important;
