@@ -18,7 +18,7 @@ window.WEDDING_CONFIG = {
   // URL Google Apps Script Web App. Kosongkan saat belum dikonfigurasi.
   appsScriptUrl: "https://script.google.com/macros/s/AKfycbyKUw614_Xvbo-I08RFn5B82NEAkpH-LHcvIynIXLUf1vuTlfNuJjP8guNMFCY5ln01/exec",
   wishesPerPage: 5,
-  musicEnabled: false,
+  musicEnabled: true,
   // Letakkan file musik di assets/music.mp3. Putar hanya setelah tamu menekan tombol buka.
   story: [
     { year: "July 2026", title: "The Beginning", text: "Jalan takdir menuntun langkah kami untuk saling mengenal pada Juli 2026, berkat perantara seorang sahabat. Bukan pertemuan yang riuh, melainkan perkenalan yang hening dan khusyuk. Teriring do'a-do'a panjang, istikharah yang mengetuk pintu langit, serta ruang-ruang diskusi yang menyatukan pemikiran." },
