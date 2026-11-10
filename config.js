@@ -27,11 +27,11 @@ window.WEDDING_CONFIG = {
     
   ],
   // Ganti path dengan foto asli di assets/images/ (contoh: assets/images/moment-1.jpg).
-  gallery: [
-    { src: "./assets/images/moment-1.jpg", alt: "Kenangan pertama", caption: "A little moment" },
-    { src: "./assets/images/moment-2.jpg", alt: "Kenangan bersama", caption: "The way we grow" },
-    { src: "./assets/images/moment-3.jpg", alt: "Kenangan bahagia", caption: "Our favorite days" }
-  ],
+ // gallery: [
+  //  { src: "./assets/images/moment-1.jpg", alt: "Kenangan pertama", caption: "A little moment" },
+  //  { src: "./assets/images/moment-2.jpg", alt: "Kenangan bersama", caption: "The way we grow" },
+  //  { src: "./assets/images/moment-3.jpg", alt: "Kenangan bahagia", caption: "Our favorite days" }
+  //],
   groomSocialUrl: "",
   brideSocialUrl: "",
   events: [
