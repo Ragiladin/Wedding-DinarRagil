@@ -489,7 +489,7 @@ function updateCountdown(animate = false) {
         headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify(data)
       });
-      showStatus("Konfirmasi dan ucapan telah terkirim. Terima kasih ");
+      showStatus("Konfirmasi dan ucapan telah terkirim. Terima kasih");
       form.reset();
       await loadWishes();
     } catch (error) {
