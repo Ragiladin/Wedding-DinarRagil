@@ -20,18 +20,18 @@
 /* Font lokal lain yang tersedia di assets/fonts */
 @font-face {
   font-family: "Amsterdam";
-  src: url("./assets/fonts/Amsterdam.ttf") format("truetype");
+  src: url("./assets/fonts/Amsterdam.woff2") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "Signature United";
-  src: url("./assets/fonts/Signature United.ttf") format("truetype");
+  src: url("./assets/fonts/Signature United.woff2") format("truetype");
   font-display: swap;
 }
 \n/* FONT LOKAL DARI FOLDER ASSETS KHUSUS NAMA MEMPELAI */
 @font-face {
   font-family: "adelia";
-  src: url("./assets/fonts/adelia.ttf") format("truetype");
+  src: url("./assets/fonts/adelia.woff2") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -911,7 +911,7 @@ body { background-color: var(--ivory); }
 /* Font eksternal Adelia */
 @font-face {
   font-family: "Adelia";
-  src: url("./assets/fonts/adelia.ttf") format("truetype");
+  src: url("./assets/fonts/adelia.woff2") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1557,7 +1557,7 @@ body { background-color: var(--ivory); }
 /* Daftarkan font Signature Photograph satu kali */
 @font-face {
   font-family: "Saudagar";
-  src: url("./assets/fonts/Saudagar.ttf") format("truetype");
+  src: url("./assets/fonts/Saudagar.woff2") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
