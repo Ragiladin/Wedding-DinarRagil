@@ -2449,12 +2449,12 @@ body { background-color: var(--ivory); }
 
 /* Label: Nama, Jumlah Tamu, Ucapan & Doa */
 #rsvpForm > label {
-  font-size: 0.9rem !important;
+  font-size: 0.85rem !important;
 }
 
 /* Konfirmasi Kehadiran */
 .attendance-fieldset legend {
-  font-size: 0.9rem !important;
+  font-size: 0.85rem !important;
 }
 
 /* Pilihan Hadir, Tidak Hadir, Masih Ragu */
@@ -2464,17 +2464,17 @@ body { background-color: var(--ivory); }
 
 /* Placeholder Nama */
 #rsvpForm input::placeholder {
-  font-size: 0.95rem !important;
+  font-size: 0.85rem !important;
 }
 
 /* Placeholder Ucapan */
 #rsvpForm textarea::placeholder {
-  font-size: 0.95rem !important;
+  font-size: 0.85rem !important;
 }
 
 /* Dropdown Jumlah Tamu */
 #rsvpForm select {
-  font-size: 0.95rem !important;
+  font-size: 0.85rem !important;
 }
 
 /* WARNA TOMBOL KIRIM KONFIRMASI */
@@ -2482,7 +2482,7 @@ body { background-color: var(--ivory); }
   background: #A9936C !important;
   color: #FFFFFF !important;
   border: 1px solid #395c4b00 !important;
-  font-size: 0.9rem !important;
+  font-size: 0.85rem !important;
   font-weight: 600 !important;
 }
 
@@ -2636,3 +2636,30 @@ body { background-color: var(--ivory); }
 
 /* Pastikan atribut hidden tetap menang atas aturan display !important sebelumnya */
 .music-toggle[hidden] { display: none !important; }
+
+/* Hilangkan border dan outline saat form aktif */
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible,
+select:focus,
+select:focus-visible,
+button:focus,
+button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Hilangkan efek border saat diklik */
+input,
+textarea,
+select {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Hilangkan efek focus pada pilihan kehadiran */
+.attendance-option input:focus-visible + span {
+  outline: none !important;
+  box-shadow: none !important;
+}
