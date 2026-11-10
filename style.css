@@ -1017,7 +1017,7 @@ body { background-color: var(--ivory); }
 
 @font-face {
   font-family: "Priestacy";
-  src: url("./assets/fonts/Priestacy.otf") format("truetype");
+  src: url("./assets/fonts/Priestacy.woff2") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1054,7 +1054,7 @@ body { background-color: var(--ivory); }
 /* ===== FONT PRIESTACY ===== */
 @font-face {
   font-family: "Priestacy";
-  src: url("./assets/fonts/Priestacy.otf") format("opentype");
+  src: url("./assets/fonts/Priestacy.woff2") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
