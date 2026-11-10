@@ -231,7 +231,7 @@ function renderEventMapsButton() {
       <article class="gift-card">
         <span class="gift-card__bank">
   <img
-    src="${gift.bank?.toUpperCase().includes('BCA') ? './assets/images/logo-bca.png' : gift.bank?.toUpperCase().includes('BSI') ? './assets/images/logo-bsi.png' : ''}"
+    src="${gift.bank?.toUpperCase().includes('BCA') ? './assets/images/logo-bca.webp' : gift.bank?.toUpperCase().includes('BSI') ? './assets/images/logo-bsi.webp' : ''}"
     alt="${escapeHTML(gift.bank || 'Bank')}"
     loading="lazy"
   >
