@@ -489,7 +489,7 @@ function updateCountdown(animate = false) {
         headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify(data)
       });
-      showStatus("Permintaan terkirim dari browser. Karena pembatasan CORS Google Apps Script, penyimpanan belum dapat dikonfirmasi di halaman ini. Periksa Google Sheets saat pengujian.");
+      showStatus("Konfirmasi dan ucapan telah terkirim. Terima kasih ");
       form.reset();
       await loadWishes();
     } catch (error) {
