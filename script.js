@@ -566,7 +566,8 @@ function updateCountdown(animate = false) {
   }
 
 function openInvitation() {
-  document.body.classList.remove("no-scroll");
+  document.documentElement.classList.remove("no-scroll");
+document.body.classList.remove("no-scroll");
 
   $("#cover").classList.add("is-hidden");
 
@@ -585,6 +586,8 @@ function openInvitation() {
   }
 
   function init() {
+    document.documentElement.classList.add("no-scroll");
+    document.body.classList.add("no-scroll");
     setConfigText();
     getGuestName();
     renderEvents();
