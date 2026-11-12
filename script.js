@@ -279,15 +279,33 @@ function renderGiftAddress() {
 }
 
   
-  function makeCalendarLink() {
-  const calendarLink = $("#calendarLink");
+function makeCalendarLink() {
+  const start = new Date(config.eventDateISO);
 
-  if (!calendarLink) return;
+  if (Number.isNaN(start.getTime())) return;
 
-  calendarLink.href = "./Undangan-Ragil-Dinar.ics";
-  calendarLink.download = "Undangan-Ragil-Dinar.ics";
-  calendarLink.removeAttribute("target");
-  calendarLink.removeAttribute("rel");
+  const end = new Date(
+    start.getTime() +
+    (Number(config.calendarDurationHours) || 5) * 3600000
+  );
+
+  const format = (date) =>
+    date.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z");
+
+  const params = new URLSearchParams({
+    action: "TEMPLATE",
+    text: `Pernikahan ${config.partnerOne || "Ragil"} & ${config.partnerTwo || "Dinar"}`,
+    dates: `${format(start)}/${format(end)}`,
+    details: config.calendarDetails || "Undangan pernikahan",
+    location: config.calendarLocation || ""
+  });
+
+  $("#calendarLink").href =
+    `https://calendar.google.com/calendar/render?${params.toString()}`;
+
+  $("#calendarLink").removeAttribute("download");
+  $("#calendarLink").target = "_blank";
+  $("#calendarLink").rel = "noopener";
 }
 function animateCountdownValue(element, target, duration = 800) {
   const startTime = performance.now();
