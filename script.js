@@ -565,8 +565,10 @@ function updateCountdown(animate = false) {
     if (sections.length) setActive(sections[0].id);
   }
 
-  function openInvitation() {
-    $("#cover").classList.add("is-hidden");
+function openInvitation() {
+  document.body.classList.remove("no-scroll");
+
+  $("#cover").classList.add("is-hidden");
 
     const sectionNav = $("#sectionNav");
     if (sectionNav) sectionNav.hidden = false;
