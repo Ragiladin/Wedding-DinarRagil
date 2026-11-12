@@ -2668,3 +2668,16 @@ body.no-scroll {
   overflow: hidden;
   height: 100vh;
 }
+
+/* Kunci seluruh halaman sebelum undangan dibuka */
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden !important;
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+/* Hilangkan scrollbar pada cover */
+#cover.cover--cinematic {
+  overflow: hidden !important;
+}
