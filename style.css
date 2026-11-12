@@ -2663,3 +2663,8 @@ select {
   outline: none !important;
   box-shadow: none !important;
 }
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
