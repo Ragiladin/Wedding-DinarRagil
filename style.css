@@ -584,7 +584,7 @@ body { background-color: var(--ivory); }
 
 /* Ukuran nama */
 .cover__names {
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-size: clamp(1.5rem, 2vw, 1.5rem);
   line-height: 1.2;
   margin-bottom: 10px;
 }
@@ -934,7 +934,7 @@ body { background-color: var(--ivory); }
 /* Ukuran dan jarak keseluruhan nama */
 .hero .display-names {
   font-family: "Adelia", cursive !important;
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-size: clamp(1.5rem, 2vw, 1.5rem);
   line-height: 1.15;
   margin: 20px 0 28px;
   gap: 10px;
