@@ -584,7 +584,7 @@ body { background-color: var(--ivory); }
 
 /* Ukuran nama */
 .cover__names {
-  font-size: 30px;
+  font-size: clamp(1.875rem, 7vw, 2.0rem);
   line-height: 1.2;
   margin-bottom: 24px;
 }
@@ -2284,7 +2284,7 @@ body { background-color: var(--ivory); }
 }
 
 .closing .display-names {
-  font-size: clamp(1.25rem, 2vw, 0.95rem) !important;
+  font-size: clamp(2.0rem, 2vw, 2.15rem) !important;
   line-height: 1.2 !important;
 }
 
@@ -2430,7 +2430,7 @@ body { background-color: var(--ivory); }
 
 /* UKURAN FONT DOA PENUTUP */
 .closing p.muted {
-  font-size: clamp(0.9rem, 2.5vw, 1rem) !important;
+  font-size: clamp(0.85rem, 2.5vw, 0.9rem) !important;
   line-height: 1.8 !important;
   color: #77796E !important;
 }
