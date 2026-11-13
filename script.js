@@ -566,24 +566,38 @@ function updateCountdown(animate = false) {
   }
 
 function openInvitation() {
+  const cover = $("#cover");
+
+  if (!cover || cover.classList.contains("is-opening")) return;
+
+  // Aktifkan kembali scroll halaman
   document.documentElement.classList.remove("no-scroll");
-document.body.classList.remove("no-scroll");
+  document.body.classList.remove("no-scroll");
 
-  $("#cover").classList.add("is-hidden");
+  // Jalankan animasi uncover
+  cover.classList.add("is-opening");
 
-    const sectionNav = $("#sectionNav");
-    if (sectionNav) sectionNav.hidden = false;
+  // Sembunyikan cover setelah animasi selesai
+  cover.addEventListener("animationend", () => {
+    cover.classList.add("is-hidden");
+    cover.classList.remove("is-opening");
+  }, { once: true });
 
-    const audio = $("#bgMusic");
-    if (config.musicEnabled && audio) {
-      audio.volume = 0.35;
-      audio.play().catch(() => {
-        // Jika browser memblokir autoplay, tamu dapat menekan tombol musik.
-      });
-    }
-    const musicButton = $("#musicToggle");
-    if (musicButton) musicButton.hidden = !config.musicEnabled;
+  // Tampilkan navigasi undangan
+  const sectionNav = $("#sectionNav");
+  if (sectionNav) sectionNav.hidden = false;
+
+  // Jalankan musik
+  const audio = $("#bgMusic");
+
+  if (config.musicEnabled && audio) {
+    audio.volume = 0.35;
+    audio.play().catch(() => {});
   }
+
+  const musicButton = $("#musicToggle");
+  if (musicButton) musicButton.hidden = !config.musicEnabled;
+}
 
   function init() {
     document.documentElement.classList.add("no-scroll");
