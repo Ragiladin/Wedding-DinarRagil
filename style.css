@@ -584,7 +584,7 @@ body { background-color: var(--ivory); }
 
 /* Ukuran nama */
 .cover__names {
-  font-size: clamp(1.875rem, 7vw, 2.0rem);
+  font-size: clamp(1.875rem, 2vw, 2.0rem);
   line-height: 1.2;
   margin-bottom: 24px;
 }
