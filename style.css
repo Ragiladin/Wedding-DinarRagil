@@ -584,9 +584,9 @@ body { background-color: var(--ivory); }
 
 /* Ukuran nama */
 .cover__names {
-  font-size: clamp(1.5rem, 2vw, 1.75rem);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
   line-height: 1.2;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 /* Jarak tanggal dari nama */
@@ -934,10 +934,10 @@ body { background-color: var(--ivory); }
 /* Ukuran dan jarak keseluruhan nama */
 .hero .display-names {
   font-family: "Adelia", cursive !important;
-  font-size: clamp(1.5rem, 2vw, 1.75rem);
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
   line-height: 1.15;
   margin: 20px 0 28px;
-  gap: 12px;
+  gap: 10px;
 }
 
 /* Nama Ragil dan Dinar */
@@ -2078,9 +2078,9 @@ body { background-color: var(--ivory); }
 
 /* Ukuran nama agar proporsional dalam kotak */
 .hero.section.reveal .display-names {
-  font-size: clamp(2rem, 7vw, 2.rem) !important;
+  font-size: clamp(2rem, 2vw, 2.rem) !important;
   line-height: 1.05 !important;
-  margin: 12px 0 18px !important;
+  margin: 12px 0 15px !important;
 }
 
 /* Tanggal */
