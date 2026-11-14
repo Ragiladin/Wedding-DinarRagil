@@ -2847,3 +2847,11 @@ input[type="submit"],
 input[type="reset"] {
   border-radius: 10px !important;
 }
+/* ===== SAMAKAN UKURAN DESKRIPSI RSVP DENGAN GIFT ===== */
+
+#rsvp .body-copy {
+  font-size: clamp(0.9rem, 2vw, 1rem) !important;
+  line-height: 1.8 !important;
+  color: #77796E !important;
+  text-align: center !important;
+}
