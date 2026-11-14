@@ -2849,7 +2849,7 @@ input[type="reset"] {
 }
 /* ===== SAMAKAN UKURAN DESKRIPSI RSVP DENGAN GIFT ===== */
 
-#rsvp-intro {
+#rsvp .body-copy {
   font-size: clamp(0.9rem, 2vw, 1rem) !important;
   line-height: 1.8 !important;
   color: #77796E !important;
