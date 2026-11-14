@@ -219,9 +219,20 @@
         <fieldset class="attendance-fieldset">
           <legend>Konfirmasi kehadiran</legend>
           <div class="attendance-options">
-            <label class="attendance-option"><input type="radio" name="attendance" value="Hadir" required><span>✅Hadir</span></label>
-            <label class="attendance-option"><input type="radio" name="attendance" value="Tidak Hadir"><span>❌Tidak hadir</span></label>
-            <label class="attendance-option"><input type="radio" name="attendance" value="Ragu"><span>Masih ragu</span></label>
+<label class="attendance-option">
+  <input type="radio" name="attendance" value="Hadir" required>
+  <span><i data-lucide="check"></i> Hadir</span>
+</label>
+
+<label class="attendance-option">
+  <input type="radio" name="attendance" value="Tidak Hadir">
+  <span><i data-lucide="x"></i> Tidak Hadir</span>
+</label>
+
+<label class="attendance-option">
+  <input type="radio" name="attendance" value="Ragu">
+  <span>Masih Ragu</span>
+</label>
           </div>
         </fieldset>
         <label for="guestCount">Jumlah tamu yang hadir</label>
