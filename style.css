@@ -2442,9 +2442,6 @@ body { background-color: var(--ivory); }
   text-align: center !important;
 }
 
-/* =====================================
-   TYPOGRAPHY RSVP FORM
-   ===================================== */
 
 
 /* =====================================
@@ -2503,7 +2500,7 @@ body { background-color: var(--ivory); }
 
 /* Status pengiriman formulir */
 #rsvpForm .form-status {
-  font-size: 0.78rem !important;
+  font-size: 0.85rem !important;
   line-height: 1.6 !important;
 }
 
@@ -2513,7 +2510,7 @@ body { background-color: var(--ivory); }
 }
 
 #rsvp .wishes-header span {
-  font-size: 0.75rem !important;
+  font-size: 0.85rem !important;
 }
 
 #rsvp .wish-item strong {
