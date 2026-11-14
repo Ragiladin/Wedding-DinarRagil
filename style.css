@@ -2801,3 +2801,21 @@ input[type="reset"] {
 #cover .cover__content {
   border-radius: 8px !important;
 }
+/* ===== ROUND CORNER FORM RSVP ===== */
+
+/* Input nama, jumlah tamu, dan ucapan */
+#rsvpForm input:not([type="radio"]):not([type="checkbox"]),
+#rsvpForm select,
+#rsvpForm textarea {
+  border-radius: 8px !important;
+}
+
+/* Pilihan konfirmasi kehadiran */
+#rsvpForm .attendance-option {
+  border-radius: 8px !important;
+}
+
+/* Tombol kirim konfirmasi */
+#rsvpForm button {
+  border-radius: 8px !important;
+}
