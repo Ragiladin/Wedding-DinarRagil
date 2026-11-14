@@ -737,6 +737,7 @@ body { background-color: var(--ivory); }
 #openInvitation {
   background-color: #d5c8ad !important;
   border: 1px solid #dfcaa000 !important;
+  border-radius: 8px !important;
 }
 
 /* Warna tulisan tombol */
