@@ -387,14 +387,41 @@ function updateCountdown(animate = false) {
     const totalPages = Math.ceil(wishes.length / WISHES_PER_PAGE);
     currentPage = Math.min(Math.max(currentPage, 1), totalPages);
     const start = (currentPage - 1) * WISHES_PER_PAGE;
-    container.innerHTML = wishes.slice(start, start + WISHES_PER_PAGE).map((wish) => `
-      <article class="wish-item">
-        <div class="wish-item__top">
-          <strong>${escapeHTML(wish.name || "Tamu")}</strong>
-          <span class="wish-item__status">${escapeHTML(wish.attendance || "")}</span>
-        </div>
-        <p>${escapeHTML(wish.message || "")}</p>
-      </article>`).join("");
+container.innerHTML = wishes.slice(start, start + WISHES_PER_PAGE).map((wish) => {
+  const submittedDate = wish.timestamp ? new Date(wish.timestamp) : null;
+
+  const formattedDate = submittedDate && !Number.isNaN(submittedDate.getTime())
+    ? submittedDate.toLocaleString("id-ID", {
+        timeZone: "Asia/Makassar",
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      }) + " WITA"
+    : "";
+
+  const attendanceStatus = {
+    "Hadir": "✅",
+    "Tidak Hadir": "❌",
+    "Ragu": "❓"
+  };
+
+  return `
+    <article class="wish-item">
+      <div class="wish-item__top">
+        <strong>${escapeHTML(wish.name || "Tamu")}</strong>
+        <span class="wish-item__status">
+          ${attendanceStatus[wish.attendance] || escapeHTML(wish.attendance || "")}
+        </span>
+      </div>
+      <p>${escapeHTML(wish.message || "")}</p>
+      ${formattedDate ? `
+        <div class="wish-item__date">🕒 ${formattedDate}</div>
+      ` : ""}
+    </article>
+  `;
+}).join("");
 
     pagination.hidden = totalPages <= 1;
     $("#pageInfo").textContent = `Halaman ${currentPage} dari ${totalPages}`;
