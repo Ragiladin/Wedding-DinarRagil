@@ -2446,35 +2446,85 @@ body { background-color: var(--ivory); }
    TYPOGRAPHY RSVP FORM
    ===================================== */
 
+
+/* =====================================
+   TYPOGRAPHY RSVP FORM
+   ===================================== */
+
+/* Judul RSVP & Ucapan */
+#rsvp .section-heading {
+  font-size: clamp(2rem, 5vw, 2.4rem) !important;
+  line-height: 1.2 !important;
+}
+
 /* Label: Nama, Jumlah Tamu, Ucapan & Doa */
-#rsvpForm > label {
-  font-size: 0.85rem !important;
-}
-
-/* Konfirmasi Kehadiran */
+#rsvpForm > label,
 .attendance-fieldset legend {
-  font-size: 0.85rem !important;
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
 }
 
-/* Pilihan Hadir, Tidak Hadir, Masih Ragu */
-.attendance-option span {
-  font-size: 0.85rem !important;
+/* Input Nama */
+#rsvpForm input:not([type="radio"]),
+#rsvpForm textarea,
+#rsvpForm select {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 0.88rem !important;
+  line-height: 1.5 !important;
 }
 
-/* Placeholder Nama */
-#rsvpForm input::placeholder {
-  font-size: 0.85rem !important;
-}
-
-/* Placeholder Ucapan */
+/* Placeholder Nama dan Ucapan */
+#rsvpForm input::placeholder,
 #rsvpForm textarea::placeholder {
   font-size: 0.85rem !important;
+  font-weight: 400 !important;
+}
+
+/* Pilihan Kehadiran */
+.attendance-option span {
+  font-size: 0.82rem !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  min-height: 46px;
 }
 
 /* Dropdown Jumlah Tamu */
 #rsvpForm select {
+  font-size: 0.88rem !important;
+}
+
+/* Tombol Kirim Konfirmasi */
+#submitRsvp {
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+  min-height: 46px;
+}
+
+/* Status pengiriman formulir */
+#rsvpForm .form-status {
+  font-size: 0.78rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Daftar ucapan */
+#rsvp .wishes-header h3 {
+  font-size: 1.2rem !important;
+}
+
+#rsvp .wishes-header span {
+  font-size: 0.75rem !important;
+}
+
+#rsvp .wish-item strong {
   font-size: 0.85rem !important;
 }
+
+#rsvp .wish-item p {
+  font-size: 0.84rem !important;
+  line-height: 1.7 !important;
+}
+
 
 /* WARNA TOMBOL KIRIM KONFIRMASI */
 #submitRsvp {
