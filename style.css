@@ -2830,7 +2830,6 @@ input[type="reset"] {
 .gift-card,
 .story-card,
 .gallery-item,
-.cover__content,
 #rsvpForm input,
 #rsvpForm select,
 #rsvpForm textarea,
@@ -2847,12 +2846,4 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   border-radius: 10px !important;
-}
-
-/* ===== GLOBAL TRANSPARENT BORDER ===== */
-
-*,
-*::before,
-*::after {
-  border-color: transparent !important;
 }
