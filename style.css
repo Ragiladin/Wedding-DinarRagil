@@ -2702,3 +2702,11 @@ body.no-scroll {
     animation-duration: 0.01ms;
   }
 }
+
+/* FONT SAUDAGAR BOLD UNTUK HEADLINE STORIES */
+#story .story-item h3 {
+  font-family: "Saudagar", cursive !important;
+  font-weight: 700 !important;
+  -webkit-text-stroke: 0.3px currentColor;
+  font-style: normal !important;
+}
