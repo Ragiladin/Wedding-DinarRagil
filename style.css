@@ -751,8 +751,8 @@ body { background-color: var(--ivory); }
 
 /* Warna saat kursor diarahkan ke tombol */
 #openInvitation:hover {
-  background-color: #D1C590 !important;
-  border-color: #c6a05b00 !important;
+  background-color: #8A774F !important;
+  border-color: #FFFFFF !important;
   color: #d3deb9 !important;
 }
 
