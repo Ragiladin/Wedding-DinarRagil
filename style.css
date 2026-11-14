@@ -2821,7 +2821,6 @@ input[type="reset"] {
 }
 /* ===== GLOBAL ROUNDED BOX WEBSITE ===== */
 
-.card,
 .intro,
 .person-card,
 .portrait,
@@ -2848,4 +2847,12 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
   border-radius: 10px !important;
+}
+
+/* ===== GLOBAL TRANSPARENT BORDER ===== */
+
+*,
+*::before,
+*::after {
+  border-color: transparent !important;
 }
