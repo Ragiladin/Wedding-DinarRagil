@@ -511,6 +511,7 @@ body { background-color: var(--ivory); }
   color: #243302;
   border: 1px solid rgba(249, 243, 231, 0);
   transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 8px !important;
 }
 
 .countdown-section .button--outline:hover {
@@ -805,6 +806,7 @@ body { background-color: var(--ivory); }
 #giftAddressContainer button {
   font-size: 0.9rem;
   padding: 12px 20px;
+  border-radius: 8px !important;
 }
 
 
@@ -821,6 +823,7 @@ body { background-color: var(--ivory); }
   justify-content: center;
   white-space: nowrap;
   font-size: 0.9rem;
+  border-radius: 8px !important;
 }
 
 
@@ -842,6 +845,7 @@ body { background-color: var(--ivory); }
 
   font-size: 0.9rem;
   white-space: nowrap;
+  border-radius: 8px !important;
 }
 
 /* Warna saat tombol diarahkan kursor */
@@ -857,6 +861,7 @@ body { background-color: var(--ivory); }
   background-color: #C6A15B !important;
   color: #203D32 !important;
   border-color: #C6A15B !important;
+  border-radius: 8px !important;
 }
 
 /* Paksa tombol Google Maps berada di tengah */
@@ -899,6 +904,7 @@ body { background-color: var(--ivory); }
 
   /* Warna garis tepi */
   border: 1px solid #c6a05b00 !important;
+  border-radius: 8px !important;
 }
 
 /* Warna saat kursor diarahkan ke tombol */
@@ -1071,11 +1077,13 @@ body { background-color: var(--ivory); }
   color: #fff;
   border: 1px solid #ad9871;
   border-radius: 0;
+  border-radius: 8px !important;
 
   font-family: "DM Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 0.04em;
+  
 
   cursor: pointer;
   transition: background 0.3s ease,
@@ -2497,6 +2505,7 @@ body { background-color: var(--ivory); }
   font-size: 0.88rem !important;
   font-weight: 600 !important;
   min-height: 46px;
+  border-radius: 8px !important;
 }
 
 /* Status pengiriman formulir */
