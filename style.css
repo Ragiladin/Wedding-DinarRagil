@@ -2788,3 +2788,16 @@ body.no-scroll {
   stroke-width: 1.8;
   flex-shrink: 0;
 }
+/* ===== ROUND CORNER SEMUA TOMBOL ===== */
+
+button,
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  border-radius: 8px !important;
+}
+/* Rounded box pada cover undangan */
+#cover .cover__content {
+  border-radius: 8px !important;
+}
