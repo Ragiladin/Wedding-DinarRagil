@@ -2819,3 +2819,33 @@ input[type="reset"] {
 #rsvpForm button {
   border-radius: 8px !important;
 }
+/* ===== GLOBAL ROUNDED BOX WEBSITE ===== */
+
+.card,
+.intro,
+.person-card,
+.portrait,
+.countdown-section,
+.countdown__item,
+.event-card,
+.gift-card,
+.story-card,
+.gallery-item,
+.cover__content,
+#rsvpForm input,
+#rsvpForm select,
+#rsvpForm textarea,
+.attendance-option span,
+.wish-item {
+  border-radius: 10px !important;
+}
+
+/* ===== GLOBAL ROUNDED BUTTON ===== */
+
+button,
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  border-radius: 10px !important;
+}
