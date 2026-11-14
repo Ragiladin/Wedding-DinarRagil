@@ -386,6 +386,66 @@ body { background-color: var(--ivory); }
 .music-toggle__disc { display: grid; place-items: center; width: 25px; height: 25px; border: 1px solid currentColor; border-radius: 50%; }
 .music-toggle.is-playing .music-toggle__disc { animation: vinylSpin 4s linear infinite; }
 .music-toggle__label { font: 500 11px/1.2 "DM Sans", sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+
+/* ===== FINAL FIX: MUSIC BUTTON CIRCLE ONLY ===== */
+
+/* Hilangkan seluruh tampilan kotak tombol induk */
+button#musicToggle.music-toggle {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+
+  border-radius: 50% !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 0 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Hilangkan tulisan Musik */
+button#musicToggle .music-toggle__label {
+  display: none !important;
+}
+
+/* Pertahankan lingkaran ikon */
+button#musicToggle .music-toggle__disc {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: grid !important;
+  place-items: center !important;
+
+  border: 1px solid currentColor !important;
+  border-radius: 50% !important;
+  background: rgba(23, 43, 35, 0.92) !important;
+
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Pertahankan animasi ketika musik diputar */
+button#musicToggle.is-playing .music-toggle__disc {
+  animation: vinylSpin 4s linear infinite;
+}
+
 .reveal {
   opacity: 0; transform: translateY(26px);
   transition: opacity .85s ease, transform .85s cubic-bezier(.2,.75,.25,1);
@@ -2872,35 +2932,4 @@ input[type="reset"] {
 #rsvp .wish-item p {
   font-size: 0.75rem !important;
   line-height: 1.6 !important;
-}
-/* ===== MUSIC BUTTON: LINGKARAN SAJA ===== */
-
-.music-toggle {
-  width: 36px !important;
-  height: 36px !important;
-  min-width: 36px !important;
-  min-height: 36px !important;
-
-  padding: 0 !important;
-  gap: 0 !important;
-
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 50% !important;
-}
-
-.music-toggle__label {
-  display: none !important;
-}
-
-.music-toggle__disc {
-  width: 36px !important;
-  height: 36px !important;
-
-  margin: 0 !important;
-  border-radius: 50% !important;
-
-  display: grid !important;
-  place-items: center !important;
 }
