@@ -2122,7 +2122,7 @@ body { background-color: var(--ivory); }
 /* BOX AYAT AL-QUR'AN */
 #quran {
   background: rgba(83, 70, 42, 0.92) !important;
-  border: 1px solid rgb(255, 255, 255) !important;
+  border: none !important;
 }
 
 
@@ -2849,9 +2849,27 @@ input[type="reset"] {
 }
 /* ===== SAMAKAN UKURAN DESKRIPSI RSVP DENGAN GIFT ===== */
 
-#rsvp-intro .body-copy {
+#rsvp .rsvp-intro {
   font-size: clamp(0.9rem, 2vw, 1rem) !important;
   line-height: 1.8 !important;
   color: #77796E !important;
   text-align: center !important;
+}
+/* ===== UKURAN FONT DAFTAR UCAPAN TERKIRIM ===== */
+
+/* Nama pengirim */
+#rsvp .wish-item__top strong {
+  font-size: 0.75rem !important;
+  line-height: 1.4 !important;
+}
+
+/* Status kehadiran */
+#rsvp .wish-item__status {
+  font-size: 0.68rem !important;
+}
+
+/* Isi ucapan */
+#rsvp .wish-item p {
+  font-size: 0.75rem !important;
+  line-height: 1.6 !important;
 }
