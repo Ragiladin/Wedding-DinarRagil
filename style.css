@@ -2873,3 +2873,34 @@ input[type="reset"] {
   font-size: 0.75rem !important;
   line-height: 1.6 !important;
 }
+/* ===== MUSIC BUTTON: LINGKARAN SAJA ===== */
+
+.music-toggle {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+
+  padding: 0 !important;
+  gap: 0 !important;
+
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 50% !important;
+}
+
+.music-toggle__label {
+  display: none !important;
+}
+
+.music-toggle__disc {
+  width: 36px !important;
+  height: 36px !important;
+
+  margin: 0 !important;
+  border-radius: 50% !important;
+
+  display: grid !important;
+  place-items: center !important;
+}
