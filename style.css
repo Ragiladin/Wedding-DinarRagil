@@ -2710,3 +2710,8 @@ body.no-scroll {
   -webkit-text-stroke: 0.3px currentColor;
   font-style: normal !important;
 }
+#openInvitation [data-lucide="mail"] {
+  width: 18px;
+  height: 18px;
+  stroke-width: 1.5;
+}
