@@ -378,12 +378,12 @@ body { background-color: var(--ivory); }
 .music-toggle {
   position: fixed; z-index: 70; right: 18px; bottom: 18px;
   display: inline-flex; align-items: center; gap: 9px; padding: 10px 14px;
-  border: 0px solid rgba(199,166,106,.65); border-radius: 999px;
+  border: none !important; border-radius: 999px;
   color: var(--ivory); background: rgba(23,43,35,.92); box-shadow: 0 8px 28px rgba(0,0,0,.18);
   cursor: pointer; backdrop-filter: blur(10px);
 }
 .music-toggle[hidden] { display: none; }
-.music-toggle__disc { display: grid; place-items: center; width: 25px; height: 25px; border: 0px solid currentColor; border-radius: 50%; }
+.music-toggle__disc { display: grid; place-items: center; width: 25px; height: 25px; border: none !important; border-radius: 50%; }
 .music-toggle.is-playing .music-toggle__disc { animation: vinylSpin 4s linear infinite; }
 .music-toggle__label { font: 500 11px/1.2 "DM Sans", sans-serif; letter-spacing: .12em; text-transform: uppercase; }
 
@@ -433,7 +433,7 @@ button#musicToggle .music-toggle__disc {
   display: grid !important;
   place-items: center !important;
 
-  border: 0px solid currentColor !important;
+  border: none !important;
   border-radius: 50% !important;
   background: rgba(23, 43, 35, 0.92) !important;
 
