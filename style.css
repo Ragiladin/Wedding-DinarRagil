@@ -2762,3 +2762,19 @@ body.no-scroll {
   height: 18px;
   stroke-width: 1.5;
 }
+
+/* ICON KONFIRMASI KEHADIRAN */
+.attendance-option span {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.attendance-option span svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1.8;
+  flex-shrink: 0;
+}
