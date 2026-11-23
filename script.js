@@ -28,13 +28,59 @@
     });
   }
 
-  function getGuestName() {
-    const params = new URLSearchParams(window.location.search);
-    const guest = (params.get("to") || "Bapak/Ibu/Saudara/i").replace(/\+/g, " ").trim();
-    $("#guestNameCover").textContent = guest || "Bapak/Ibu/Saudara/i";
-    const input = $("#guestName");
-    if (params.get("to") && input) input.value = guest;
+
+function getGuestName() {
+  const params = new URLSearchParams(window.location.search);
+
+  let guest = params.get("to") || "";
+  const hasGuest = params.has("to");
+
+  // Perbaiki link lama yang menggunakan karakter & tanpa encoding
+  if (hasGuest) {
+    const rawQuery = window.location.search.replace(/^\?/, "");
+    const parts = rawQuery.split("&");
+
+    const toIndex = parts.findIndex((part) => {
+      const rawKey = part.split("=")[0];
+
+      try {
+        return decodeURIComponent(rawKey.replace(/\+/g, " ")) === "to";
+      } catch {
+        return false;
+      }
+    });
+
+    if (toIndex !== -1) {
+      const nameParts = [
+        parts[toIndex].slice(parts[toIndex].indexOf("=") + 1)
+      ];
+
+      // Gabungkan bagian nama yang terpotong oleh karakter &
+      for (let i = toIndex + 1; i < parts.length; i++) {
+        if (parts[i].includes("=")) break;
+        nameParts.push(parts[i]);
+      }
+
+      try {
+        guest = decodeURIComponent(
+          nameParts.join("&").replace(/\+/g, " ")
+        ).trim();
+      } catch {
+        guest = (params.get("to") || "").trim();
+      }
+    }
   }
+
+  guest = guest || "Bapak/Ibu/Saudara/i";
+
+  $("#guestNameCover").textContent = guest;
+
+  const input = $("#guestName");
+  if (hasGuest && input) {
+    input.value = guest;
+  }
+}
+
 
 
 
