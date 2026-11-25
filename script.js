@@ -538,6 +538,19 @@ container.innerHTML = wishes.slice(start, start + WISHES_PER_PAGE).map((wish) =>
 }
 
 
+function syncGuestCountField() {
+  const attendance = $('input[name="attendance"]:checked')?.value;
+  const group = $("#guestCountGroup");
+  const count = $("#guestCount");
+
+  if (!group || !count) return;
+
+  const isAbsent = attendance === "Tidak Hadir";
+
+  group.hidden = isAbsent;
+  count.disabled = isAbsent;
+}
+
   async function submitRsvp(event) {
     event.preventDefault();
     const form = event.currentTarget;
@@ -547,14 +560,20 @@ container.innerHTML = wishes.slice(start, start + WISHES_PER_PAGE).map((wish) =>
       return;
     }
 
-    const submitButton = $("#submitRsvp");
-    const data = {
-      name: $("#guestName").value.trim(),
-      attendance: form.elements.attendance.value,
-      guestCount: Number($("#guestCount").value) || 1,
-      message: $("#wishMessage").value.trim(),
-      submittedAt: new Date().toISOString()
-    };
+
+const submitButton = $("#submitRsvp");
+const attendance = form.elements.attendance.value;
+
+const data = {
+  name: $("#guestName").value.trim(),
+  attendance: attendance,
+  guestCount: attendance === "Tidak Hadir"
+    ? 0
+    : Number($("#guestCount").value) || 1,
+  message: $("#wishMessage").value.trim(),
+  submittedAt: new Date().toISOString()
+};
+
     if (!data.name || !data.attendance) {
       showStatus("Lengkapi nama dan konfirmasi kehadiran.", true);
       return;
@@ -578,6 +597,7 @@ container.innerHTML = wishes.slice(start, start + WISHES_PER_PAGE).map((wish) =>
       });
       showStatus("Terima kasih! Konfirmasi kehadiran dan ucapan Anda telah dikirim.");
       form.reset();
+      syncGuestCountField();
       await loadWishes();
     } catch (error) {
       showStatus("Pengiriman gagal. Periksa koneksi dan URL Google Apps Script.", true);
@@ -677,6 +697,13 @@ function openInvitation() {
     document.body.classList.add("no-scroll");
     setConfigText();
     getGuestName();
+    
+syncGuestCountField();
+
+$$('input[name="attendance"]').forEach((radio) => {
+  radio.addEventListener("change", syncGuestCountField);
+});
+
     renderEvents();
     renderEventMapsButton();
     renderStory();
