@@ -2933,3 +2933,8 @@ input[type="reset"] {
   font-size: 0.75rem !important;
   line-height: 1.6 !important;
 }
+
+
+#guestCountGroup[hidden] {
+  display: none !important;
+}
